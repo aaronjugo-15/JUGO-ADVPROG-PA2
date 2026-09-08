@@ -33,7 +33,33 @@ I then normalized the array by using the code
 
 `X_normalized = (X - mean)/std`
 
-With this, it creates a new array `X_normalized` that 
+With this, it creates a new array `X_normalized` that normalizes the array.
+
+Using the `print("quote", variable/array)`, I printed the mean, standard deviation, normalized array, normalized mean (using the `.mean()`), and normalized standard deviation (using the `.std()`)
+
+Since the instruction is to round the floating point and the value of normalized standard deviation must be 1, I used the `round(X_normalized.std, 1)` to round up the value.
+
+`np.random.seed(2112)`\
+`X = np.random.randint(10, 101, size=(5, 5))`
+
+`mean = X.mean()`\
+`std = X.std()`
+
+`X_normalized = (X - mean)/std`
+
+`print("Array of X: \n", X)`\
+`print("\n Normalized Array: \n", X_normalized)`\
+`print("\n Mean: \n", mean)`\
+`print("\nStandard Deviation: \n", std)`
+
+`print("\n Normalized Mean: \n", X_normalized.mean())`\
+`print("\n Normalized Standard Deviation: \n", round(X_normalized.std(),1))`
+
+
+
+
+
+
 
 
 
