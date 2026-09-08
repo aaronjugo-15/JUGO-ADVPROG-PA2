@@ -6,6 +6,7 @@
 
 --------------------------------
 Before doing the task, I imported Numpy in the notebook by using the code `import numpy as np`
+
 ### Task 1: REPRODUCIBLE NORMALIZATION PROBLEM
 
 The first task is to create a reproducible random 5 × 5 integer ndarray named `X` by using the code:\
@@ -67,6 +68,8 @@ Since the instruction is to round the floating-point value, the `round(X_normali
 `print("\n Normalized Mean: \n", round(X_normalized.mean(),1))`\
 `print("\n Normalized Standard Deviation: \n", round(X_normalized.std(),1))`
 
+The output matched the intended result of 15 selected elements, with the first element 484, and the last element 1296.
+
 After executing, the variable `X_normalized` is saved in a file using the code `np.save("X_normalized.npy", X_normalized)`
 
 ------------------------------------------------
@@ -83,31 +86,37 @@ A correct solution has 50 selected elements; the first is 8, and the last is 1,0
 
 Saved the selected array as `div_by_4.npy`
 
-First, create variable 
+First, create a variable named `d` that creates an array of the first 100 positive integers by using the `.arange(1,101,1)`.
+
+Create another variable named `p` that cubes the variable `d` using `d**3`.
+
+Assign variable `C` that reshapes the array `p` into 10 rows and 10 columns using `.reshape(10,10)`
+
+Use `div_by_4` to create a boolean function for the variable `C` that gets the element that is divisible by 4 using the code `C[C %4 == 0]`.
+
+Display the shape of C (using `.shape`), the array of div_by_4, and the number of selected elements (using `.save`) using the function `print("quote", variable/array)`
+
+`d = np.arange(1,101,1)`\
+`p = d ** 3`
+
+`C = p.reshape(10,10)`
 
 
+`div_by_4 = C[C % 4 ==0]`
 
+`print("Shape of C:\n", C.shape)`\
+`print("\n Arrays divisible by 4: \n", div_by_4) `\
+`print("\n Number of Selected Elements:\n", div_by_4.size)`
 
+The output matched the intended result of 50 selected elements. The first element is 8, and the last element is 1,000,000.
 
+After executing, the variable `div_by_4` is saved in a file using the code `np.save("div_by_4.npy", div_by_4)`
 
+----------------------------------------------------------------------------------------------------------
 
+### Task 3: ABOVE-MEAN SQUARES PROBLEM
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The last task is to create a 6 × 6 ndarray named S containing the squares of the first 36 positive integers in increasing row-major order. Compute the mean of all elements of S and store it in S mean. Then use Boolean filtering to select only the elements strictly greater than the S mean. 
 
 The required checks are:
 1. Display S;
@@ -115,7 +124,7 @@ The required checks are:
 3. above mean; and
 4. The number of selected elements.
 
-
+The correct solution has 15 selected elements; the first is 484 and the last is 1296.
 
 
 
