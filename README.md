@@ -60,7 +60,7 @@ Since the instruction is to round the floating-point value, the `round(X_normali
 `print("\n Normalized Mean: \n", X_normalized.mean())`\
 `print("\n Normalized Standard Deviation: \n", round(X_normalized.std(),1))`
 
-Thus, the full code is:
+**Thus, the full code is:**
 
 `np.random.seed(2112)`\
 `X = np.random.randint(10, 101, size=(5, 5))`
@@ -118,7 +118,7 @@ Display the shape of C (using `.shape`), the array of div_by_4, and the number o
 `print("\n Arrays divisible by 4: \n", div_by_4) `\
 `print("\n Number of Selected Elements:\n", div_by_4.size)`
 
-Thus, the full code is:
+**Thus, the full code is:**
 
 `d = np.arange(1,101,1)`\
 `p = d ** 3`
@@ -169,7 +169,7 @@ Lastly, display S, S_mean, above_mean, and the number of selected elements using
 `print("\n Above Mean squares:\n", above_mean.reshape(5,3))`\
 `print("\n Number of Selected Elements:\n", above_mean.size)`
 
-Thus, the full code is:
+**Thus, the full code is:**
 
 `S = (np.arange(1,37,1) **2).reshape(6,6)`\
 `S_mean = S.mean()`\
