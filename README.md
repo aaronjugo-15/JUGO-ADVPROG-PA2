@@ -4,7 +4,7 @@
 ### 2ECE-A
 ### 9/8/2026 
 
-
+--------------------------------
 Before doing the task, I imported Numpy in the notebook by using the code `import numpy as np`
 ### Task 1: REPRODUCIBLE NORMALIZATION PROBLEM
 
@@ -23,9 +23,9 @@ NumPy’s default std() call.
 
 The required checks are:
 - Display X
-- X_normalized
-- mean
-- standard deviation.
+- Display X_normalized
+- Display mean
+- Display standard deviation.
 - normalized mean must be 0
 - normalized standard deviation must be 1.
 
@@ -69,11 +69,21 @@ Since the instruction is to round the floating-point value, the `round(X_normali
 
 After executing, the variable `X_normalized` is saved in a file using the code `np.save("X_normalized.npy", X_normalized)`
 
+------------------------------------------------
 ### Task 2: CUBES DIVISIBLE BY 4 PROBLEM
 
-The second task is to create the first 100 positive integers, cube every element, and reshape the result into a 10 × 10 ndarray named C. Thus, C begins with 13 and ends with 1003. Use a Boolean condition on C to obtain every cubed value divisible by 4. Store the selected values in div by 4. 
+The second task is to create the first 100 positive integers, cube every element, and reshape the result into a 10 × 10 ndarray named C. Thus, C begins with 13 and ends with 1003. Use a Boolean condition on C to obtain every cubed value divisible by 4. Store the selected values in div_by_4. 
 
+The required checks are:
+- Display the shape of C
+- Display the array div_by_4
+- Display the number of selected elements.
+  
+A correct solution has 50 selected elements; the first is 8, and the last is 1,000,000.
 
+Saved the selected array as `div_by_4.npy`
+
+First, create variable 
 
 
 
